@@ -1,0 +1,11 @@
+# Touch-Modules
+
+on early-init
+    insmod /vendor/lib/modules/1.1/scp.ko
+    insmod /vendor/lib/modules/1.1/mt6368-accdet.ko
+    insmod /vendor/lib/modules/1.1/touch_boost.ko
+    insmod /vendor/lib/modules/1.1/mtk_ioctl_touch_boost.ko
+    insmod /vendor/lib/modules/1.1/focaltech_touch_rodin.ko
+    insmod /vendor/lib/modules/1.1/goodix_core_rodin.ko
+    insmod /vendor/lib/modules/1.1/xiaomi_touch_rodin.ko
+

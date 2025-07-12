@@ -136,7 +136,6 @@ TW_EXCLUDE_APEX := true
 TW_INCLUDE_NTFS_3G := true
 TARGET_USES_MKE2FS := true
 TW_INCLUDE_FUSE_EXFAT := true
-TW_LOAD_VENDOR_MODULES := "focaltech_touch_rodin.ko goodix_core_rodin.ko mtk_ioctl_touch_boost.ko touch_boost.ko xiaomi_touch_rodin.ko"
 TW_EXTRA_LANGUAGES := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_DEVICE_VERSION := GitFASTBOOT
