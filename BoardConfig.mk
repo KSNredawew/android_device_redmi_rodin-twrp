@@ -63,7 +63,7 @@ TARGET_NO_KERNEL := true
 BOARD_RAMDISK_USE_LZ4 := true
 BOARD_KERNEL_SEPARATED_DTBO := true
 
-TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
 
 BOARD_KERNEL_BASE := 0x3FFF8000
 BOARD_PAGE_SIZE := 4096
@@ -136,9 +136,10 @@ TW_EXCLUDE_APEX := true
 TW_INCLUDE_NTFS_3G := true
 TARGET_USES_MKE2FS := true
 TW_INCLUDE_FUSE_EXFAT := true
+TW_LOAD_VENDOR_MODULES := "focaltech_touch_rodin.ko goodix_core_rodin.ko mtk_ioctl_touch_boost.ko touch_boost.ko xiaomi_touch_rodin.ko"
 TW_EXTRA_LANGUAGES := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
-TW_DEVICE_VERSION := FOR KSN
+TW_DEVICE_VERSION := KSN
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/config/usb_gadget/g1/functions/mass_storage.usb0/lun.%d/file"
 
 # Kernel module
