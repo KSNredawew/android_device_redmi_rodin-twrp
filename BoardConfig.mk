@@ -141,6 +141,3 @@ TW_EXTRA_LANGUAGES := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_DEVICE_VERSION := KSN
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/config/usb_gadget/g1/functions/mass_storage.usb0/lun.%d/file"
-
-# Kernel module
-TW_LOAD_VENDOR_MODULES := "goodix_core_rodin.ko xiaomi_touch_rodin.ko"
